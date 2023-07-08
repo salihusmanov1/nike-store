@@ -1,0 +1,33 @@
+<header class="main-header">
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+
+            <li class="main-header__item">
+                <div class="logo">
+                    <p>LOGO</p>
+                </div>
+            </li>
+        </ul>
+        <ul class="main-header__item-list text-uppercase">
+            <li class="main-header__item">
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Home</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/gallery' ? 'active' : '' %>" href="/gallery">Gallery</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/contact' ? 'active' : '' %>" href="/contact">Contact
+                </a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/partners' ? 'active' : '' %>" href="/partners">partners
+                </a>
+            </li>
+        </ul>
+        <ul class="main-header__item-list">
+            <li class="main-header__item">
+                <a href="/cart"><img src="/images/Group35.png" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+</header>

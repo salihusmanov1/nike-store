@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+body {
+  font-family: 'Poppins';
+}
+
+body p,
+h3,
+h5 {
+  margin: 0;
+}
+
+.container-xxl .content {
+  padding: 60px 0;
+}
+
+.row h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #213A51;
+
+}
+
+.container-xxl .content a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #213A51;
+  margin-left: 10px;
+}
+
+.col-left .table tr th {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #213A51;
+}
+
+.col-left tr {
+  height: 85px;
+}
+
+.col-left {
+  /* padding-top: 20px; */
+  width: 65%;
+}
+
+/* .col-left .table {
+  border-bottom: 2px solid #E0E0E0;
+} */
+
+.col-left .table tbody {
+  border-bottom: 2px solid #E0E0E0;
+  border-top: 2px solid #E0E0E0;
+}
+
+.col-left .table tbody tr {
+  border: #fff;
+}
+
+
+.col-left tbody th {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-left td {
+  vertical-align: middle;
+  text-align: center;
+}
+
+.col-left td .form-select {
+  width: 68px;
+  height: 28px;
+  background-color: #EBEBEB;
+  border-style: none;
+}
+
+.col-left td .input-group {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.col-left td .input-group .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  border-style: none;
+  background-color: #fff;
+}
+
+.col-left td .input-group p {
+  padding: 0 20px;
+
+}
+
+.col-left .text {
+  padding-left: 20px;
+  position: relative;
+  align-content: center;
+}
+
+.col-left .text .name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #000000;
+  margin: 0;
+}
+
+.col-left .text .brand {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 7px;
+  line-height: 8px;
+  color: #A3A3A3;
+  margin: 0;
+}
+
+.col-left .price p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #213A51;
+
+}
+
+.col-left .row {
+  display: flex;
+  align-items: center;
+  margin: 29px 0;
+}
+
+.col-left .last-price {
+  margin-top: 30px;
+  display: grid;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.col-left .last-price .row {
+  margin: 7px 0;
+  align-items: center;
+
+
+}
+
+.col-left .last-price .row h5 {
+  width: 50%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #213A51;
+
+}
+
+.col-left .last-price .row p {
+  width: 50%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #CACACA;
+}
+
+.col-left .last-price .total {
+  border-top: 2px solid #E0E0E0;
+  padding-top: 23px;
+}
+
+.col-left .last-price .total p {
+  width: 50%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 22px;
+  color: #213A51;
+}
+
+.col-right {
+  margin-left: 50px;
+  width: 30%;
+  background-color: #EFEFEF;
+  border-style: none;
+  border-radius: 19px;
+}
+
+.col-right .card {
+  background-color: #EFEFEF;
+  padding: 15px;
+}
+
+.col-right .card h3 {
+  margin: 0;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #213A51;
+
+}
+
+.col-right .card h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.9376px;
+  line-height: 24px;
+  color: #A3A3A3;
+  margin-top: 30px;
+}
+
+.col-right .card p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.6094px;
+  line-height: 22px;
+  color: #000000;
+  margin-top: 9px;
+}
+
+.col-right .card .form-check {
+  margin-top: 9px;
+}
+
+.col-right .card .form-check label {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14.6094px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.col-right .card .form-select {
+  width: 70px;
+  height: 28px;
+  background-color: #EFEFEF;
+  border-style: none;
+}
+
+.col-right .card a {
+  margin-top: 80px;
+  background: #243BFE;
+  border-radius: 7px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFDFD;
+}

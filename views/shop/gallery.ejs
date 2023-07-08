@@ -1,0 +1,1304 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/gallery.css">
+    </head>
+
+    <body>
+        <%- include('../includes/navigation.ejs') %>
+            <main class="container-xxl">
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Pills Tabs -->
+                        <ul class="nav nav-pills justify-content-between" id="pills-tab" role="tablist">
+                            <li class="nav-item">
+                                <h1 class="nav-link">Men’s <strong>Shoes & Sneakers</strong></h1>
+                            </li>
+
+                            <li class="nav-item ms-auto"> <!-- Added ms-auto class to align to the right -->
+                                <span class="nav-link">Sort By:</span>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="recomended-tab" data-bs-toggle="pill"
+                                    data-bs-target="#recomended" type="button" role="tab" aria-controls="recomended"
+                                    aria-selected="false">Recomended</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="newest-tab" data-bs-toggle="pill" data-bs-target="#newest"
+                                    type="button" role="tab" aria-controls="newest"
+                                    aria-selected="false">Newest</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="lowest-tab" data-bs-toggle="pill" data-bs-target="#lowest"
+                                    type="button" role="tab" aria-controls="lowest" aria-selected="false">Low
+                                    Price</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="highest-tab" data-bs-toggle="pill"
+                                    data-bs-target="#highest" type="button" role="tab" aria-controls="highest"
+                                    aria-selected="false">High Price</button>
+                            </li>
+                        </ul>
+                        <hr>
+
+                        <div class="row">
+
+                            <div class="col-lg-4">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <div class="card">
+                                            <h4 class="card-title">Categories</h4>
+                                            <div class="card-body">
+                                                <div class="d-block">
+                                                    <ul class="list">
+                                                        <li
+                                                            class="mb-2 d-flex justify-content-between align-items-center">
+                                                            <span>Lifestyle</span>
+                                                            <hr class="number-line">
+                                                            <span class="number">1</span>
+                                                        </li>
+                                                        <li
+                                                            class="mb-2 d-flex justify-content-between align-items-center">
+                                                            <span>running</span>
+                                                            <hr class="number-line">
+                                                            <span class="number">2</span>
+                                                        </li>
+                                                        <li
+                                                            class="mb-2 d-flex justify-content-between align-items-center">
+                                                            <span>Basketball</span>
+                                                            <hr class="number-line">
+                                                            <span class="number">3</span>
+                                                        </li>
+                                                        <li
+                                                            class="mb-2 d-flex justify-content-between align-items-center">
+                                                            <span>football</span>
+                                                            <hr class="number-line">
+                                                            <span class="number">4</span>
+                                                        </li>
+                                                        <li
+                                                            class="mb d-flex justify-content-between align-items-center">
+                                                            <span>training & gym</span>
+                                                            <hr class="number-line">
+                                                            <span class="number">5</span>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="new-category">
+                                        <div class="col-md-6">
+                                            <div class="card">
+                                                <h4 class="card-title">Colors</h4>
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-start justify-content-start">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #750BC9;"></button>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #3983C7;"></button>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #FF00D6;"></button>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #F66A6A;"></button>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #FFD600;"></button>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #FF1D1D;"></button>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #FFFFFF;"></button>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #00E0FF;"></button>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #D9D9D9;"></button>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <button type="button" class="color"
+                                                                    style="background-color: #000000;"></button>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="new-category">
+                                        <div class="col-md-8">
+                                            <div class="card">
+                                                <h4 class="card-title">Price</h4>
+                                                <div class="card-body">
+                                                    <div class="d-flex align-items-start justify-content-start">
+                                                        <ul class="list-inline">
+                                                            <li class="list-inline-item mb-1">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="exampleRadios" id="exampleRadios1"
+                                                                        value="option1">
+                                                                    <label class="form-check-label"
+                                                                        for="exampleRadios1">
+                                                                        Under 100
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="exampleRadios" id="exampleRadios1"
+                                                                        value="option2">
+                                                                    <label class="form-check-label"
+                                                                        for="exampleRadios1">
+                                                                        100 to 150
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="exampleRadios" id="exampleRadios1"
+                                                                        value="option3">
+                                                                    <label class="form-check-label"
+                                                                        for="exampleRadios1">
+                                                                        150 to 200
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="exampleRadios" id="exampleRadios1"
+                                                                        value="option4">
+                                                                    <label class="form-check-label"
+                                                                        for="exampleRadios1">
+                                                                        200 to 250
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="exampleRadios" id="exampleRadios1"
+                                                                        value="option5">
+                                                                    <label class="form-check-label"
+                                                                        for="exampleRadios1">
+                                                                        250 to 300
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-inline-item mb-1">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="exampleRadios" id="exampleRadios1"
+                                                                        value="option6">
+                                                                    <label class="form-check-label"
+                                                                        for="exampleRadios1">
+                                                                        over 300
+                                                                    </label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="new-category">
+                                        <div class="col-md-5">
+                                            <div class="card">
+                                                <h4 class="card-title">size</h4>
+                                                <div class="card-body">
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>38.5</td>
+                                                                <td>39</td>
+                                                                <td>39.5</td>
+                                                                <td>40</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>40.5</td>
+                                                                <td>41</td>
+                                                                <td>41.5</td>
+                                                                <td>42</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>42.5</td>
+                                                                <td>43</td>
+                                                                <td>43.5</td>
+                                                                <td>44</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>44.5</td>
+                                                                <td>45</td>
+                                                                <td>45.5</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-8">
+                                <div class="row">
+
+
+                                    <div class="tab-content pt-2" id="myTabContent">
+
+
+
+                                        <div class="tab-pane fade show active" id="recomended" role="tabpanel"
+                                            aria-labelledby="newest-tab">
+
+
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+
+
+
+
+
+
+                                            </div>
+
+                                        </div>
+
+
+
+
+                                        <div class="tab-pane fade" id="newest" role="tabpanel"
+                                            aria-labelledby="newest-tab">
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="tab-pane fade" id="lowest" role="tabpanel"
+                                            aria-labelledby="lowest-tab">
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane fade " id="highest" role="tabpanel"
+                                            aria-labelledby="highest-tab">
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="shoe">
+                                                        <div class="card">
+                                                            <img src="/images/nike_snekkers.png" class="card-img-top"
+                                                                alt="...">
+                                                            <div class="card-body">
+                                                                <div class="icon"><i
+                                                                        class="fa-solid fa-cart-shopping"></i>
+                                                                </div>
+                                                                <h5 class="card-title">Nike free Metcon</h5>
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center">
+                                                                    <p class="card-text mb-0">Nike</p>
+                                                                    <span class="price">$ 470.99</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </main>
+
+            <%- include('../includes/end.ejs') %>
