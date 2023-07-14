@@ -36,6 +36,10 @@
     align-items: stretch;
 }
 
+.shoe a {
+    text-decoration: none;
+}
+
 .list {
     list-style: none;
     padding: 0;
